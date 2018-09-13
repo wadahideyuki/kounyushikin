@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/*
+Css Name: reset.css for HTML5/PC
+Version: 3.3
+色など、適宜編集してご利用下さい
+*/
+
+/*
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+*/
+/*
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+*/
+
+body { /* line-height:1; */
+line-height: 1.75; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; }
+
+nav ul { list-style: none; }
+
+blockquote,
+q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+/*	vertical-align: baseline; */
+	background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #4694d1;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #4694d1;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del { text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+} */
+
+/*
+input,
+select {  vertical-align:middle;
+vertical-align: baseline; }
+*/
+
+
+/*-----------------------------------------------
+独自追加部分開始
+-----------------------------------------------*/
+
+/*
+余計な隙間・ボーダーの削除
+半角文字も改行可能にする
+フォントサイズの初期設定（html62.5%に対する1.2remなので、12px）
+タップ時の色を消す
+ベースラインを揃える
+背景を透過と明示する
+iOSでの文字サイズの自動変更バグを改善する
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+input[type=text], input[type=tel], input[type=password], textarea, input[type=image],
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	word-wrap: break-word;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-text-size-adjust: 100%;
+}
+
+input{
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word;
+	vertical-align: baseline;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*画像のverticalalignの変更*/
+img{
+	vertical-align: top;
+}
+
+/*
+文字サイズ12px
+行の高さ1.75倍=21px
+フォントの指定
+*/
+html { font-size: 62.5%; }
+
+* {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+
+body {
+	background-color: #fafafb;
+	color: #4694d1;
+	font-family:"游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	letter-spacing:0.1em;
+}
+
+/*chromeの文字サイズバグ対策*/
+textarea{
+	font-family:"游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+body{
+	font-size:1.8em;
+}
+
+/*andoroid4.2のテキストが折り返される問題の解消*/
+p{
+	background-image: url(../img/s.png);
+}
+
+
+
+/* リストの装飾を削除 */
+ul,
+ol { list-style: none; }
+
+/*
+clearfix
+http://kojika17.com/2011/04/floatclearfix.php
+*/
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix { zoom: 1; }
+
+/* リンク基本設定 */
+a {
+	color: #4694d1;
+	text-decoration: underline;
+	outline: none;
+}
+
+a:link {
+	color: #4694d1;
+	text-decoration: underline;
+	outline: none;
+}
+
+a:visited {
+	color: #4694d1;
+	text-decoration: underline;
+	outline: none;
+}
+
+a:hover {
+	color: #4694d1;
+	text-decoration: none;
+	outline: none;
+}
+
+a:active {
+	color: #4694d1;
+	text-decoration: none;
+	outline: none;
+}

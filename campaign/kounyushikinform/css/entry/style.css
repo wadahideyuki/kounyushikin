@@ -1,0 +1,820 @@
+@charset "utf-8";
+
+/*全体設定*/
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#contents {
+  background: #f1f2f2;
+  color: #9eaebd;
+
+  background: #ffffff;
+  color: #000000;
+
+  position: relative;
+}
+
+#contents.xv_wrap {
+  overflow: hidden;
+}
+
+.xv_wrap h1 {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.xv_wrap > div {
+	width: 100%;
+	min-width: 1000px;
+	margin :0 auto;
+}
+
+
+.xv_wrap .no_fixed > div {
+	margin: auto;
+	text-align: center;
+}
+
+.xv_wrap .footer .container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.xv_wrap .footer .container a {
+  display: block;
+  width: 140px;
+  height: 78px;
+  margin: 20px auto 25px;
+}
+
+.xv_wrap .footer .container .copyright {
+  color: #000;
+  text-align: center;
+  font-size: 10px;
+  font-size: 1.0rem;
+  font-family: "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.xv_wrap .form_area {
+	/*background-image: url(../images/top_bg_01.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;*/
+	padding: 0 0 100px;
+}
+
+.xv_wrap .form_area h2 {
+  /*padding: 120px 0 0;*/
+  margin: 120px 0 40px;
+}
+
+.xv_wrap .form_area .txt01 {
+  padding: 40px 0;
+  color: #9eaebd;
+  color: #000;
+  font-size: 18px;
+	font-weight: bold;
+}
+
+.xv_wrap .form_area .a .txt01,.xv_wrap .form_area .b .txt01 {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.xv_wrap .form_area .txt02 {
+  border: 1px solid #4694d1;
+  width: 100%;
+  max-width: 998px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.xv_wrap .form_area .txt07 {
+  text-align: right;
+  width: 1000px;
+  margin: 5px auto 0;
+}
+
+.xv_wrap .form_area .txt02 .wrap {
+  background: #fff;
+  padding: 30px;
+  color: #5c5b5b;
+}
+
+.xv_wrap .form_area .txt02 .wrap .img {}
+
+.xv_wrap .form_area .txt04 {
+  font-size: 22px;
+  margin: 0 0 40px;
+}
+
+.xv_wrap .form_area .txt05 {
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+.xv_wrap .form_area .txt02 .title {
+  background: #4694d1;
+  padding: 20px;
+}
+
+.xv_wrap .form_area .txt03 {
+  margin: 60px 0 40px;
+}
+
+.xv_wrap .form_area .caution {
+  width: 100%;
+  height: 183px;
+  margin: 30px auto 30px;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  overflow: scroll;
+}
+
+.xv_wrap form > .help {
+  margin: 20px 0;
+}
+
+.xv_wrap .form_area .caution .wrap {
+  text-align: left;
+  padding: 20px;
+}
+
+.xv_wrap .form_area .form {
+  min-width: 1000px;
+  /* max-width: 1440px; */
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+/*.xv_wrap .form_area .form .tabs {
+  display: table;
+  width: 100%;
+}
+
+.xv_wrap .form_area .form .windows {border: 1px solid #4694d1;border-top: 3px solid #4694d1;}
+
+.xv_wrap .form_area .form .windows > div {
+  display: none;
+}*/
+
+.xv_wrap .form_area .form .windows > .active {
+  display: inherit;
+}
+
+.xv_wrap .form_area .form .windows > div {
+  padding: 30px 40px;
+  /*background: #fff;*/
+}
+
+.xv_wrap .form_area .form .windows .b {
+}
+
+.xv_wrap .form_area .form .control {
+  display: block;
+  width: 610px;
+  font-size: 18px;
+  padding: 20px 0 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.xv_wrap .formError {
+  margin-left: 350px;
+  text-align: left;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.xv_wrap .errMsg {
+  display: block;
+}
+
+.xv_wrap .form_area .form .control label {
+  display: block;
+  text-align: left;
+  color: #9eaebd;
+  color: #000;
+  float: left;
+}
+
+.xv_wrap .form_area .form .a .control label {
+  width: 195px;
+}
+
+.xv_wrap .form_area .form .b .control label {
+  width: 195px;
+}
+
+.xv_wrap .form_area .form .control input {
+  display: block;
+  width: 380px;
+  font-size: 16px;
+  background: #e8f1f9;
+  padding: 1em;
+  border: 1px solid #9eaebd;
+}
+
+.xv_wrap .form_area .form .control .help {
+  color: #585454;
+  text-align: left;
+  font-size: 16px;
+  margin: 10px 0 0 195px;
+}
+
+.xv_wrap .form_area .form .control .remind {
+  color: #4694d1;
+  display: block;
+  text-decoration: underline;
+}
+
+/*.xv_wrap .form_area .form .tabs a {
+  display: table-cell;
+  padding: 0 15px;
+}
+
+.xv_wrap .form_area .form .tabs a[data-target="a"] {
+  text-align: right;
+}
+
+.xv_wrap .form_area .form .tabs a[data-target="b"] {
+  text-align: left;
+}
+
+.xv_wrap .form_area .form .tabs a img {
+  vertical-align: bottom ! important;
+}
+*/
+.xv_wrap .form_area .caution .title {
+  line-height: 2em;
+  margin: 0 0 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.xv_wrap .form_area .caution .text {
+  text-align: left;
+}
+
+.xv_wrap .form_area .caution .text .title {
+  margin: 10px 0;
+}
+
+.xv_wrap .form_area .caution .text p {
+  line-height: 1.5em;
+}
+
+.xv_wrap .form_area .caution .text .clause {
+  padding-left:1em;
+}
+
+.xv_wrap .form_area .img01 {
+  margin-top: -15px;
+}
+
+.xv_wrap .banner_area {
+  background: #fff;
+  padding: 40px 0;
+  width: 1000px;
+}
+
+.xv_wrap .banner_area a {
+  display: block;
+}
+
+.xv_wrap .banner_area a img {
+  width: 100%;
+}
+
+.xv_wrap .attention_area {
+  background: #fff;
+}
+
+.xv_wrap .attention_area .wrap {
+  padding: 40px 0;
+  width: 1000px;
+  margin: auto;
+  border-top: 1px solid #000;
+  text-align: left;
+}
+
+.xv_wrap .attention_area .wrap p{
+  margin-bottom: 0.5em;
+  color: #5b5b5b;
+  font-family:"游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+
+/* xv */
+
+/*.xv_wrap .form_area h2 {
+  padding: 120px 0 40px;
+  margin: 120px 0 40px;
+}*/
+
+#lineup_contents .windows {
+  background: #fff;
+  border: solid 1px #9eaebd;
+}
+ #term {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  z-index: 5000;
+  display: none;
+}
+
+
+
+.xv_wrap #term .wrap {
+  position: relative;
+  width: 1000px;
+  margin: 120px auto 0;
+}
+
+.xv_wrap #term .wrap .close {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+
+.xv_wrap .form_area h3.bg {
+  background: #9eaebd;
+  background: #04489E;
+  margin: 80px auto 0;
+}
+
+.xv_wrap #term .wrap h4 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.xv_wrap #term .wrap .body {
+  background: #f1f5f7;
+  padding: 40px;
+  border: 1px solid #9eaebd;
+  overflow: scroll;
+}
+
+.xv_wrap #term .wrap .body p {
+  font-size: 14px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.xv_wrap #term span {
+  display: block;
+  padding-left: 2em;
+  text-indent: -1em;
+	font-size: 14px;
+}
+
+/* top */
+
+.no_border {
+  border: 0px !important;
+	padding: 0 10px;
+}
+
+.xv_wrap #top .form_area .btn_area {
+  width: 680px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 80px 0;
+}
+
+.xv_wrap #top .form_area .txt03 {
+  margin: 10px 0 40px;
+}
+
+.xv_wrap #top .form_area .txt03 .under_bar {
+  border-bottom: 1px solid #9eaebd;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* first */
+
+
+.xv_wrap #first .form_area .sns_login {
+  padding: 40px 0;
+}
+
+/*..xv_wrap #first .form_area .sns_login h3 {
+  margin: 80px 0 0;
+}
+
+xv_wrap #first .form_area .sns_login .txt01 {
+  margin: 40px 0;
+}*/
+
+.xv_wrap .windows .send_btn {
+  margin-top: 40px;
+}
+
+.xv_wrap #first .form_area .sns_login ul {
+  overflow: hidden;
+}
+
+.xv_wrap #first .form_area .sns_login li {
+  float: left;
+}
+
+.xv_wrap #first .form_area .sns_login li:nth-child(1) {
+  padding-left: 27px;
+}
+
+.xv_wrap #first .form_area .sns_login li:nth-child(2) {
+  padding: 0 28px;
+}
+
+.xv_wrap #first .form_area .sns_login li:nth-child(3) {
+  padding-right: 27px;
+}
+
+/* finuser */
+
+.xv_wrap #finuser .form_area h3 {
+  background: #9eaebd;
+  background: #04489E;
+}
+
+@media screen and (max-width:640px) {
+
+  img,
+  input {
+    width: 100%;
+  }
+
+  .xv_wrap h1 {
+    width: 20.4%;
+    margin: 0;
+  }
+
+  .xv_wrap .form_area .txt02 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .xv_wrap .form_area h3.bg {
+  margin: 40px auto 0;
+}
+
+  .xv_wrap #term .wrap {
+    width: 100%;
+  }
+
+  .xv_wrap .footer .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .xv_wrap .footer .container a {
+    width: 20.4%;
+    height: auto;
+  }
+
+  .xv_wrap .footer .container .copyright {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+
+  .xv_wrap .form_area {
+    padding: 0 0 40px;
+  }
+
+  .xv_wrap > div {
+    width: 100%;
+    min-width: 240px;
+    margin :0 auto;
+  }
+
+  .xv_wrap > div {
+    width: 100%;
+    max-width: 640px;
+    margin :0 auto;
+  }
+
+  .xv_wrap .form_area h2 {
+    /*padding: 40px 0 15px;*/
+    width: 100%;
+    margin: 40px auto 15px;
+  }
+
+  .xv_wrap .formError {
+    margin: 0 0 1em 0;
+  }
+
+  /* top */
+
+  .xv_wrap #top .form_area h2 {
+    /*padding: 40px 0 15px;*/
+    width: 90%;
+    margin: 40px auto 15px;
+  }
+
+  /*.xv_wrap #top .form_area .mv {
+    width: 90%;
+  }*/
+
+  .xv_wrap #top .form_area .txt01 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: inherit;
+  }
+
+  .xv_wrap #top .form_area .btn_area {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .xv_wrap #top .form_area .btn_area .btn02 {
+    width: 61.27%
+  }
+
+  .xv_wrap #top .form_area .txt03 {
+    margin: 10px 0 30px;
+  }
+
+  .xv_wrap #top .form_area .txt03 .under_bar {
+    border-bottom: 1px solid #9eaebd;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  /* first */
+
+  .xv_wrap #first .form_area h2 img,
+  .xv_wrap #finuser .form_area h2 img {
+    width: 90%;
+  }
+
+  .xv_wrap #first .form_area h3 img,
+  .xv_wrap #finuser .form_area h3 img {
+    width: 80%;
+  }
+
+  .xv_wrap .form_area .form {
+    min-width: 240px;
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .xv_wrap .form_area .form .windows > div {
+    padding: 0 5%;
+  }
+
+  .xv_wrap .form_area .form .control {
+    display: block;
+    width: 100%;
+    padding: 20px 0 0;
+    margin: auto;
+	  font-size: 90%;
+    overflow: hidden;
+  }
+	.xv_wrap .form_area .form .control .help{
+		font-size: 100%;
+	}
+	.xv_wrap .form_area .form .control input{
+		font-size: 100%;
+	}
+
+  .xv_wrap .form_area .form .control input {
+    width: 88%;
+  }
+
+  .xv_wrap .form_area .form .control .help {
+    margin: 0;
+  }
+
+  .xv_wrap #first .form_area .sns_login{
+    padding: 20px 5%;
+  }
+  /*.xv_wrap #first .form_area .sns_login h3 {
+    margin: 30px 0 0;
+  }*/
+
+  .xv_wrap #first .form_area .txt01 {
+    width: 100%;
+  }
+
+  .xv_wrap #first .form_area .sns_login li:nth-child(1) {
+  padding-left: 0;
+  }
+
+  .xv_wrap #first .form_area .sns_login li:nth-child(2) {
+    padding: 0;
+  }
+
+  .xv_wrap #first .form_area .sns_login li:nth-child(3) {
+    padding-right: 0;
+  }
+
+  .xv_wrap #first .form_area .sns_login li {
+    float: none;
+    padding: 10px 0;
+  }
+
+}
+
+
+/* =========================================================
+汎用クラス
+========================================================= */
+
+/* フロート設定 */
+.left { float:left; }
+.right { float:right; }
+.clear { clear:both; }
+
+/* テキストの位置 */
+.tal { text-align:left; }
+.tac { text-align:center; }
+.tar { text-align:right; }
+
+/* テキストサイズ */
+.fs10 { font-size: 10px; font-size: 1.0rem; }
+.fs12 { font-size: 12px; font-size: 1.2rem; }
+.fs14 { font-size: 14px; font-size: 1.4rem; }
+.fs15 { font-size: 15px; font-size: 1.5rem; }
+.fs16 { font-size: 16px; font-size: 1.6rem; }
+.fs18 { font-size: 18px; font-size: 1.8rem; }
+.fs20 { font-size: 20px; font-size: 2.0rem; }
+.fs24 { font-size: 24px; font-size: 2.4rem; }
+
+/* マージン設定 */
+.mt-10 { margin-top:-10px !important }
+.mt-5 { margin-top:-5px !important }
+.mt0 { margin-top:0 !important }
+.mt5 { margin-top:5px !important }
+.mt10 { margin-top:10px !important }
+.mt15 { margin-top:15px !important }
+.mt20 { margin-top:20px !important }
+.mt25 { margin-top:25px !important }
+.mt30 { margin-top:30px !important }
+.mt35 { margin-top:35px !important }
+.mt40 { margin-top:40px !important }
+.mt50 { margin-top:50px !important }
+.mr0 { margin-right:0 !important }
+.mb0 { margin-bottom:0 !important }
+.mb5 { margin-bottom:5px !important }
+.mb10 { margin-bottom:10px !important }
+.mb15 { margin-bottom:15px !important }
+.mb20 { margin-bottom:20px !important }
+.mb25 { margin-bottom:25px !important }
+.mb30 { margin-bottom:30px !important }
+.mb35 { margin-bottom:35px !important }
+.mb40 { margin-bottom:40px !important }
+.mb50 { margin-bottom:50px !important }
+.ml0 { margin-left:0 !important }
+.ex-txt{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 3% 30px 3%;
+}
+.about-subaruid h4{
+	font-size: 1.8rem;
+	padding: 25px 0 15px;
+}
+.about-subaruid p{
+	font-size: 1.4rem;
+	line-height: 1.6;
+	text-align: left;
+	width: auto;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+
+
+
+
+ #ie-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  z-index: 5000;
+  display: none;
+}
+
+
+
+ #ie-box .wrap {
+  position: relative;
+  width: 780px;
+  margin: 120px auto 0;
+}
+
+ #ie-box .wrap .close {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+
+
+ #ie-box .wrap h4 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+ #ie-box .wrap .body {
+  background: #f1f5f7;
+  padding: 40px;
+  border: 1px solid #9eaebd;
+  overflow: scroll;
+}
+
+#ie-box .wrap img{
+	width: 100%;
+	height: auto;
+    max-width: 672px;
+}
+#ie-box .wrap .body h3{
+	background: #000;
+	padding: 10px;
+	line-height: 1.2;
+	color: #FFF;
+	font-size: 16px;
+	margin: 0px 0px 20px 0px;
+}
+#ie-box .wrap .body  ol{
+	padding-bottom: 20px;
+}
+#ie-box .wrap .body li{
+	list-style: decimal;
+	margin: 0 0 0 30px;
+	font-size: 14px;
+	text-align: left;
+}
+ #ie-box .wrap .body p {
+  font-size: 14px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.xv_wrap .form_area .txt02 span{
+}
+.icon-edge{
+/*
+	background: url(../../images/icon_edge.png) no-repeat left center;
+	padding: 0 0 0 20px;
+	background-size: 17px;
+*/
+}
+.icon-ie{
+/*
+	background: url(../../images/icon_ie.png) no-repeat left center;
+	padding: 0 0 0 20px;
+	background-size: 17px;
+*/
+}
+.form_wrap h3.bg{
+	background: #04489E;
+}
+@media screen and (max-width:640px) {
+	.xv_wrap .form_area .form .b .control label{
+		width: auto;
+	}
+ #ie-box .wrap {
+  width: 100%;
+}
+	#ie-box .wrap .body{
+		padding:20px;
+	}
+.icon-edge,.icon-ie{
+/*
+	padding: 0 0 0 30px;
+	background-size:30px;
+*/
+}
+	
+h3.bg img{
+	width: 80%;
+	height: auto;
+}
+}
+.btn-term,.btn-ie{
+	color: #4694d1 !important;
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+------------------------------------------------------------------*/
+
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    height:100%;
+}
+body {
+    height:100%;
+    background:#fff;
+}
+img {
+    border:0;
+}
+ul {
+    list-style:none;
+}
+
+#lineup_contents{
+	border-top: 1px #eee solid;
+}
+
+/*
+----------- specialは以下にcssを#spclcntで連結して記述 ------------------
+*/
+
+#spclcnt{width:100%}#spclcnt h1{display:block;overflow:hidden;position:relative;width:100%;height:420px;background:url(../img/special/title_bg.jpg) center center no-repeat;background-size:cover}#spclcnt h1 p{display:block;width:653px;height:152px;margin:150px auto 0;text-indent:-9999px;background:url(../img/special/title.png) center center no-repeat;background-size:cover}#spclcnt div.sp_ev_info{position:relative;overflow:hidden;width:100%;height:540px;background:url(../img/special/read_bg.jpg) center bottom no-repeat;background-size:cover}#spclcnt div.sp_ev_info p.read{text-indent:-9999px;margin-left:50%;margin-top:75px;width:458px;height:302px;background:url(../img/special/read_text.png) center center no-repeat;background-size:cover}#spclcnt div.sp_ev_map{position:relative;width:100%;padding-top:65px;padding-bottom:65px}#spclcnt div.sp_ev_map h2{width:501px;height:35px;margin:0 auto;text-indent:-9999px;background:url(../img/special/map_title.png) center center no-repeat;background-size:cover}#spclcnt div.sp_ev_map ul{position:relative;width:733px;height:40px;margin:32px auto 0;background:url(../img/special/map_info.png) center center no-repeat;background-size:cover}#spclcnt div.sp_ev_map ul li{float:left;text-indent:-9999px}#spclcnt div.sp_ev_map div.map{margin:32px auto 0;width:900px;height:300px}#spclcnt div.ownly{width:100%;background-color:#f4efe9;padding-top:60px;padding-bottom:60px}#spclcnt div.ownly h2{display:block;width:489px;height:133px;text-indent:-9999px;background:url(../img/special/ownly_title.png) center center no-repeat;background-size:cover;margin:0 auto 40px}#spclcnt div.ownly p.read{display:none}#spclcnt div.ownly div.ownlymain{width:974px;margin:0 auto}
